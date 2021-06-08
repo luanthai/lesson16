@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bai tap 16-menu 2 cap</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		body{font-family: arial;}
+		#website{
+			width: 100%;
+			min-height: 100px;
+			background-image: url("footer.jpg");
+		}
+		#header{
+			width: 50%;
+			height: 200px;
+			margin-left: 50px;
+			line-height: 200px;
+		}
+		h1{
+			font-size: 50px;
+			color: white;
+			margin-left: 50px;
+		}
+		#menu{
+			width: 100%;
+			height: 50px;
+			margin-left: 5px;
+			background-color: black;
+		}
+		#trai{
+			width: 500px;
+			height: 50px;
+			float: left;
+			margin-left: 100px;
+		}
+		#trai ul{
+			position: relative;
+		}
+		#trai>ul>li{
+			background: white;
+			width: 80px;
+			height: 50px;
+			line-height: 50px;
+			list-style-type: none;
+			text-align: center;
+			position: relative;
+			padding: 0 5px;
+			margin: 0 5px;
+			float: left;
+		}
+		#trai ul li a{
+			text-decoration: none;
+			color: black;
+			font-size: 15px;
+		}
+		#trai ul li a:hover{
+			text-decoration: white;
+			color: gray;
+		}
+		#trai > ul > li:hover{
+			background: black;
+		}
+		#trai>li>ul{
+			position: absolute;
+			background: black;
+		}
+		#trai li ul{
+			display: none;
+			position: absolute;
+			top: 50px;
+		}
+		#trai li ul li{
+			background: gray;
+			width: 100px;
+			height: 50px;
+			list-style-type: none;
+			text-align: left;
+			padding: 0 5px;
+			margin: 0 5px;
+			line-height: 50px;
+			}
+		#trai li:hover ul{
+			display: block;
+		}
+		#trai li ul li:hover{
+			background: lightgray;
+		}
+		#trai li ul li a: hover{
+			color: black;
+		}
+		#phai{
+			width: 500px;
+			height: 50px;
+			float: left;
+			text-align: center;
+			line-height: 50px;
+		}
+		p{
+			font-weight: bold;
+			color: white;
+			text-align: center;
+			line-height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="website">
+		<div id="header">
+			<h1>Website CMS</h1>
+		</div>
+		<div id="menu">
+			<div id="trai">
+				<ul>
+					<li><a href="#">Link 1</a>
+						<ul>
+							<li><a href="#">Link1.1</a></li>
+							<li><a href="#">Link1.2</a></li>
+							<li><a href="#">Link1.3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Link 2</a>
+						<ul>
+							<li><a href="#">Link2.1</a></li>
+							<li><a href="#">Link2.2</a></li>
+							<li><a href="#">Link2.3</a></li>
+							<li><a href="#">Link2.4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a>
+						<ul>
+							<li><a href="#">Link4.1</a></li>
+							<li><a href="#">Link4.2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Link 5</a></li>
+				</ul>
+			</div>
+			<div id="phai">
+				<p>Welcome back champion, you have 17 messages</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
